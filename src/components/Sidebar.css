@@ -1,0 +1,133 @@
+/* Estilos para a Sidebar */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #333;
+  width: 220px; /* Aumentei um pouco a largura para dar mais conforto aos botões */
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Z-index da sidebar para garantir que o modal fique acima dela */
+  box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1); /* Adicionando uma sombra sutil à sidebar */
+}
+
+.sidebar-button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 15px;
+  margin: 8px 0; /* Aumentei o espaçamento para os botões não ficarem tão próximos */
+  width: 100%;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: left;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease;
+}
+
+.sidebar-button:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Adicionando sombra ao passar o mouse */
+}
+
+.sidebar-button:focus {
+  outline: none;
+}
+
+/* Estilos para o Modal (AddContratoModal) */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro e transparente */
+  display: flex;
+  justify-content: center; /* Centraliza o modal horizontalmente */
+  align-items: center; /* Centraliza o modal verticalmente */
+  z-index: 1000; /* Garante que o modal fique acima de outros elementos */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px; /* Aumentando o arredondamento para ficar mais suave */
+  width: 400px; /* A largura foi mantida, mas pode ser ajustada conforme necessário */
+  max-width: 100%;
+  max-height: 80vh; /* Limita a altura para 80% da altura da tela */
+  overflow-y: auto; /* Adiciona rolagem se o conteúdo exceder o limite da altura */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px; /* Aumentando o padding para os inputs ficarem mais confortáveis */
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form label {
+  font-size: 16px;
+  color: #555; /* Ajustando o texto dos labels para um cinza escuro */
+  margin-bottom: 5px;
+  display: block;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 18px; /* Tamanho do botão aumentado para uma melhor visualização */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* O botão agora ocupa a largura total do modal */
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Estilos para texto fora dos campos do formulário */
+.modal-content label,
+.modal-content p,
+.modal-content h3 {
+  color: #555; /* Texto em cinza escuro */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 480px) {
+  .sidebar {
+    width: 180px; /* Diminui a largura da sidebar em telas pequenas */
+  }
+
+  .modal-content {
+    width: 90%; /* O modal agora ocupa 90% da largura da tela em dispositivos pequenos */
+    max-width: 95%;
+  }
+
+  .sidebar-button {
+    font-size: 14px; /* Diminuindo o tamanho da fonte para telas pequenas */
+  }
+}

@@ -1,0 +1,50 @@
+/* Estilo do título do modal */
+.modal-content h2 {
+    color: #00aaff;  /* Azul claro */
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+/* Organiza os botões (Adicionar e Cancelar) ao lado um do outro */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+  
+  /* Estilos do botão Adicionar */
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;  /* Verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 20%; /* Botão ocupa metade da largura */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049; /* Escurece um pouco ao passar o mouse */
+  }
+  
+  /* Estilos do botão Cancelar */
+  .cancel-btn {
+    padding: 10px 20px;
+    background-color: #9e9e9e; /* Cinza */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 20%; /* Botão ocupa metade da largura */
+  }
+  
+  .cancel-btn:hover {
+    background-color: #757575; /* Escurece um pouco ao passar o mouse */
+  }
+  

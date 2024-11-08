@@ -83,7 +83,7 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    width: 48%; /* Botão ocupa metade da largura */
+    width: 20%; /* Botão ocupa metade da largura */
     margin-right: 4%;
   }
   
@@ -101,7 +101,7 @@
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    width: 48%; /* Botão ocupa metade da largura */
+    width: 20%; /* Botão ocupa metade da largura */
   }
   
   .cancel-btn:hover {
